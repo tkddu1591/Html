@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>5.입력양식태그</title>
+	</head>
+	<body>
+		<h3>기본입력</h3>
+		<form action="https://naver.com">
+			<table border="1">
+				<tr>
+					<td>아이디</td>
+					<td>
+						<input type="text" name="uid">
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td>
+						<input type="password" name="pass">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<input type="submit" value="로그인">
+					</td>
+				</tr>
+			
+			</table>
+		</form>
+		<h4>기타 입력양식태그</h4>
+		<form action="https://daum.net">
+			<h4>취미를 고르세요.</h4>
+			<label><input type="checkbox" name="hobby" value="1">등산</label>
+			<label><input type="checkbox" name="hobby" value="2">여행</label>
+			<label><input type="checkbox" name="hobby" value="3">영화</label>
+			<label><input type="checkbox" name="hobby" value="4">게임</label>
+			<label><input type="checkbox" name="hobby" value="5">운동</label>
+			
+			<h4>성별을 고르세요</h4>
+			<label><input type="radio" name="gender" value="1">남자</label>
+			<label><input type="radio" name="gender" value="2">여자</label>
+			
+			<h4>주소를 선택하세요</h4>
+			<select name="addr">
+				<option>서울</option>
+				<option>대전</option>
+				<option>대구</option>
+				<option>광주</option>
+				<option>부산</option>
+			</select>
+			<h4>날짜를 선택하세요</h4>
+			<input type="date" name="date">
+			
+			<h4>전송하기</h4>
+			<input type="submit" value="전송하기">
+			<button>버튼</button>
+		</form>
+	
+		<h3>자기소개</h3>
+		<form action="https://google.com">
+			<textarea name="intro" cols="30" rows="10"></textarea>
+			</br><input type="submit" value="전송하기">
+		</form>
+	
+	</body>
+</html>
