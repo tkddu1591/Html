@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>1.CSS 기본선택자</title>
+	    <!--
+	        날짜 : 2023/07/04
+	        이름 : 김상엽
+	        내용 : CSS 기본선택자
+	        
+	        -id 속성은 태그의 유일한 식별값 지정
+	        -class 속성은 태그의 그룹을 지정
+	    -->
+	    <style>
+		    /*전체 선택자*/
+		    * {
+			    color: blue;
+		    }
+		    /*태그 선택자*/
+		    h3{
+			    color: red;
+		    }
+		    
+		    p{
+			    color: green;
+		    }
+		    /*클래스 선택자*/
+		    .txt1{
+			    color: orange;
+		    }
+		    /*아이디 선택자*/
+		    #txt1{
+			    color: yellow;
+		    }
+	    </style>
+    </head>
+    <body>
+	    <h3>1.css 기본선택자</h3>
+	    
+	    <p>Hello, 안녕하세요.</p>
+	    <p class="txt1">Hello, 안녕하세요.</p>
+	    <p class="txt1">Hello, 안녕하세요.</p>
+	    <p id="txt1">Hello, 안녕하세요.</p>
+    </body>
+</html>

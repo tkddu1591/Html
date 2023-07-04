@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>4.CSS 속성선택자</title>
+		<!--
+			날짜 : 2023/07/04
+			이름 : 김상엽
+			내용 : CSS 속성선택자 실습하기
+			 -태그의 속성을 이용한 선택자
+			 -input 태그 선택할 때 많이 사용
+		-->
+		<style>
+			input[name=uid] {
+				width: 220px;
+				height: 30px;
+			}
+			
+			input[name=pass] {
+				
+				width: 220px;
+				height: 30px;
+			}
+			
+			input[value=로그인] {
+				width: 300px;
+				height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>4.CSS 속성선택자</h3>
+		
+		<form action="#">
+			<h4>로그인</h4>
+			<table border="1">
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="uid"></td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td><input type="password" name="pass"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<input type="submit" value="로그인">
+					</td>
+				</tr>
+			
+			</table>
+		</form>
+	</body>
+</html>

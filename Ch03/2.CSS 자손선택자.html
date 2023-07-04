@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>2.CSS 자손선택자</title>
+		<!--
+			날짜 : 2023/07/04
+			이름 : 김철학
+			내용 : CSS 자손선택자 실습하기
+			
+			- 자손(자식, 후손) 선택자는 태그의 계층구조를 이용한 선택자
+			- 자식 선택자 >, 후손선택자 띄어쓰기
+		
+		-->
+		<style>
+			/*자식 선택자*/
+			section > h3 {
+				color: blue;
+			}
+			
+			body > h3 {
+				color: green;
+			}
+			
+			.txt1 > em {
+				color: orange;
+			}
+			
+			.txt2 > em {
+				color: purple;
+			}
+			
+			/*후손 선택자*/
+			.txt1 b {
+				background: yellow;
+			}
+			
+			.txt2 b {
+				background: gray;
+			}
+		
+		</style>
+	
+	
+	</head>
+	<body>
+		<h3>2.CSS 자손선택자</h3>
+		<section>
+			<h3>애국가</h3>
+			<p class="txt1">
+				동해물과 백두산이 마르고 닳도록<br/>
+				하느님이 보우하사 우리나라 만세<br/>
+				<em>
+					무궁화 삼천리 화려 강산<br/>
+					<b>대한사람</b> 대한으로 길이 보전하세
+				</em>
+			</p>
+			<p class="txt2">
+				남산 위에 저 소나무 철갑을 두른듯<br/>
+				바람서리 불변함은 우리 기상일세<br/>
+				<em>
+					무궁화 삼천리 화려 강산<br/>
+					<b>대한사람</b> 대한으로 길이 보전하세
+				</em>
+			</p>
+		</section>
+	</body>
+</html>
