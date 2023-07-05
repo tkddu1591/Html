@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--
+		날짜 : 2023/07/05
+		이름 : 김상엽
+		내용 : CSS 박스속성 실습하기
+		
+		width, height
+		 - block, inline-block 태그의 가로, 세로 크기 지정
+		 - px, % 단위 사용
+		
+		margin, padding
+		 - margin 바깥쪽 여백
+		 - padding 안쪽 여백
+		
+		border
+		 - 태그의 테두리 지정
+		 - border: '크기 모양 색' 순서로 지정
+		
+		box-sizing
+		 - 고정된 width, height 크기에서 padding, border 적용
+		 -padding, border와 같이 사용
+	-->
+	<head>
+		<meta charset="UTF-8">
+		<title>2.박스속성</title>
+		
+		<style>
+			section > div {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				background: orange;
+			}
+			
+			section:nth-of-type(1) > div:nth-child(1) {
+				width: 50px;
+				height: 50px;
+			}
+			
+			section:nth-of-type(1) > div:nth-child(2) {
+				width: 10%;
+				height: 100px;
+			}
+			
+			section:nth-of-type(1) > div:nth-child(3) {
+				width: 50%;
+				height: 100px;
+			}
+			
+			section:nth-of-type(2) > div:nth-child(1) {
+				padding: 10px;
+				margin: 10px;
+			}
+			section:nth-of-type(2) > div:nth-child(2) {
+				padding: 10px 20px;
+				margin: 10px 20px;
+			}
+			section:nth-of-type(2) > div:nth-child(3) {
+				padding: 10px 20px 30px;
+				margin: 10px 20px 30px;
+			}
+			section:nth-of-type(2) > div:nth-child(4) {
+				padding: 10px 20px 30px 40px;
+				margin: 10px 20px 30px 40px;
+			}
+			section:nth-of-type(2) > div:nth-child(5) {
+				padding-top:10px;
+				padding-right: 20px;
+				padding-left: 30px;
+				padding-bottom: 40px;
+				margin-top: 10px;
+				margin-left: 20px;
+				margin-right: 30px;
+				margin-bottom: 40px;
+			}
+			section:nth-of-type(2) > div:nth-child(6) {
+				display: block;
+				margin:0 auto;
+			}
+			
+			section:nth-of-type(3)>div:nth-child(1){
+				border-width: 1px;
+				border-style: solid;
+				border-color: black;
+			}
+			section:nth-of-type(3)>div:nth-child(2){
+				border: 1px solid black;
+			}
+			section:nth-of-type(3)>div:nth-child(3){
+				border: 2px dashed red;
+			}
+			
+			section:nth-of-type(4) > div:nth-child(1){
+				padding: 12px;
+				box-sizing: border-box;
+			}
+			section:nth-of-type(4) > div:nth-child(2){
+				border: 2px solid black;
+				box-sizing: border-box;
+			}
+			section:nth-of-type(4) > div:nth-child(3){
+				padding: 6px;
+				border: 2px solid black;
+				box-sizing: border-box;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<h3>2.박스속성</h3>
+		
+		<h4>width, height 속성</h4>
+		<section>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</section>
+		<h4>margin, padding 속성</h4>
+		<section>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</section>
+		<h4>border 속성</h4>
+		<section>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</section>
+		<h4>box-sizing 속성</h4>
+		<section>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</section>
+	</body>
+</html>
