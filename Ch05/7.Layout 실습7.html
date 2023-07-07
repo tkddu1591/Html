@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>7.Layout 실습7</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			ol,ul{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			#container{
+				margin: 0 auto;
+				background: #aaa;
+				padding: 10px;
+				width: 860px;
+				height: auto;
+				box-sizing: border-box;
+			}
+			header{
+				height: 120px;
+				width: 100%;
+				background: #ccc;
+			}
+			main{
+				height: auto;
+				width: 100%;
+				background: #ccc;
+				box-sizing: border-box;
+				padding: 10px;
+				overflow: hidden;
+				margin:10px 0 10px 0;
+			}
+			main>section{
+				height: 400px;
+				width: 400px;
+				float: left;
+				background: #eee;
+			}
+			main>aside{
+				height: 400px;
+				width: 200px;
+				margin-left: 10px;
+				background: #eee;
+				float: right;
+			}
+			footer{
+				height: 100px;
+				width: 100%;
+				background: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<header><h3>header</h3></header>
+			<main><h3>main</h3>
+				<section><h3>section</h3></section>
+				<aside><h3>aside1</h3></aside>
+				<aside><h3>aside2</h3></aside>
+			
+			</main>
+			<footer><h3>footer</h3></footer>
+		</div>
+	
+	</body>
+</html>
