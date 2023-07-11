@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+#container {
+    width: 1200px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #000CCC;
+}
+
+header > .logo {
+    float: left;
+    box-sizing: border-box;
+    position: absolute;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    text-shadow: 0 -1px 0 #222;
+    color: white;
+    margin: 20px;
+}
+
+header > nav {
+    width: 900px;
+    height: 100px;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+}
+
+header > nav > ul {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+header > nav > ul > li {
+    float: left;
+    width: 200px;
+    height: 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header > nav > ul > li > a:hover {
+    color: #111;
+}
+
+header a > span {
+    margin-left: 10px;
+    font-size: 8px;
+}
+
+header > nav ol {
+    display: none;
+}
+
+header > nav ol > li {
+}
+
+header > nav ol > li > a {
+}
+
+main {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#slideShow {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+#slideShow > section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#slideShow > section > img {
+    position: absolute;
+}
+
+#slideShow > section > img:nth-of-type(1) {
+    left: 0;
+    top: 0;
+}
+
+#slideShow > section > img:nth-of-type(2) {
+    left: 100%;
+    top: 0;
+}
+
+#slideShow > section > img:nth-of-type(3) {
+    left: 200%;
+    top: 0;
+}
+
+#slideShow > button {
+    padding: 20px;
+    height: 100%;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+#slideShow > button:hover {
+    background-color: #222;
+    opacity: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+#slideShow > button.left {
+    left: 0;
+    top: 0;
+}
+
+#slideShow > button.right {
+    right: 0;
+    top: 0;
+}
+
+#contents {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#tabMenu {
+    margin-top: 30px;
+    width: 50%;
+    height: 300px;
+    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+}
+
+#tabMenu > label {
+    display: inline-block;
+    padding: 15px 25px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+#tabMenu > label:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#tabMenu > label > input[type=radio] {
+    display: none;
+}
+
+#tabMenu > label:nth-of-type(1) {
+    border: 1px solid #ddd;
+    background: #eeeeee;
+    /*color: #aaa;*/
+    color: darkred;
+}
+
+#tabMenu > section {
+    width: 100%;
+    height: 246px;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px solid #ddd;
+}
+
+#tabMenu > section > article {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none
+}
+
+#tabMenu > section > article:nth-of-type(1) {
+    display: block;
+}
+
+#tabMenu > section ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#tabMenu > section ul > li {
+    margin-bottom: 20px;
+}
+
+#tabMenu > section ul a {
+}
+
+#tabMenu > section ol {
+}
+
+#tabMenu > section ol > li {
+}
+
+#tabMenu > section ol a {
+}
+
+#tabMenu > section ol img {
+}
+
+#links {
+    width: 50%;
+    height: 300px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#links > ul {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#links > ul > li {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+#links > ul a {
+}
+
+#links > ul span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 50px auto 15px auto;
+    border-radius: 75px;
+}
+
+#links > ul span.icon1 {
+    background-image: url("../images/icon-1.jpg")
+}
+
+#links > ul span.icon2 {
+    background-image: url("../images/icon-2.jpg")
+}
+
+#links > ul span.icon3 {
+    background-image: url("../images/icon-3.jpg")
+}
+
+#links > ul h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+footer>ul:nth-of-type(1){
+    margin: 15px 0;
+}
+footer>ul:nth-of-type(1)>li>a{
+    display: inline-block;
+    width: 100px;
+    height:30px;
+    border-right:1px solid #cccccc;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    color: #666666;
+}
+footer>ul:nth-of-type(1)>li:nth-of-type(2)>a{
+    width: 160px;
+}
+footer>ul:nth-of-type(1)>li:nth-of-type(4)>a{
+    border:none;
+}
+footer>h5{
+    font-size: 13px;
+    color: #aaaaaa;
+    font-weight: normal;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+footer>ul:nth-of-type(2){}
+footer>ul:nth-of-type(2)>li{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 5px;
+}
+
+footer>ul:nth-of-type(2)>li>a>span.ic1 {
+    background-image: url("../images/sns-1.png")
+}
+footer>ul:nth-of-type(2)>li>a>span.ic2 {
+    background-image: url("../images/sns-2.png")
+}
+footer>ul:nth-of-type(2)>li>a>span.ic3 {
+    background-image: url("../images/sns-3.png")
+}
