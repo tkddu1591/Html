@@ -4,6 +4,55 @@
 		<meta charset="UTF-8">
 		<title>Dream Jeju</title>
 		<link rel="stylesheet" href="./css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		
+		
+		<script>
+			$(function () {
+				const slides = $('.slides')
+				let slideNum = 0;
+				$('.left').click(function () {
+					slides.eq(slideNum).animate({'left': '-100%'}, 1000)
+					slideNum++;
+					
+					if (slideNum === 3)
+						slideNum = 0;
+			
+					slides.eq(slideNum).css('left', '100%').animate({'left': '0%'}, 1000)
+				})
+				
+				$('.right').click(function () {
+					slides.eq(slideNum).animate({'left': '100%'}, 1000)
+					slideNum--;
+					
+					if (slideNum === -1)
+						slideNum = 2;
+			
+					slides.eq(slideNum).css('left', '-100%').animate({'left': '0%'}, 1000)
+				})
+				
+				
+			})
+			window.onload=function (){
+				const tabBtn = document.querySelectorAll('#tabMenu>label');
+				const tabContent = document.querySelectorAll('#tabMenu>section>article');
+				
+				tabBtn[0].onmousedown=function (){
+					tabBtn[1].classList.remove('on')
+					this.classList.add('on')
+					tabContent[0].classList.add('on');
+					tabContent[1].classList.remove('on');
+				}
+				tabBtn[1].onmousedown=function (){
+					tabBtn[0].classList.remove('on')
+					this.classList.add('on')
+					tabContent[1].classList.add('on');
+					tabContent[0].classList.remove('on');
+				}
+				
+			}
+		
+		</script>
 	</head>
 	<body>
 		<div id="container">
@@ -39,19 +88,19 @@
 			<main>
 				<div id="slideShow">
 					<section>
-						<img src="./images/photo-1.jpg" alt="유채꽃" class="slide1">
-						<img src="./images/photo-2.jpg" alt="제주바다" class="slide2">
-						<img src="./images/photo-3.jpg" alt="돌담벼락" class="slide3">
+						<img src="./images/photo-1.jpg" alt="유채꽃" class="slides">
+						<img src="./images/photo-2.jpg" alt="제주바다" class="slides">
+						<img src="./images/photo-3.jpg" alt="돌담벼락" class="slides">
 					</section>
 					<button class="left">〈</button>
 					<button class="right">〉</button>
 				</div>
 				<div id="contents">
 					<div id="tabMenu">
-						<label><input type="radio" name="tabs" id="tab1" checked>공지사항</label>
+						<label class="on"><input type="radio" name="tabs" id="tab1" checked>공지사항</label>
 						<label><input type="radio" name="tabs" id="tab2">갤러리</label>
 						<section>
-							<article>
+							<article class="on">
 								<ul>
 									<li><a href="#">사무실을 이전했습니다.</a></li>
 									<li><a href="#">[참가 모집] 카약 체험에 초대합니다.</a></li>
@@ -99,16 +148,16 @@
 			</main>
 			<footer>
 				<ul>
-					<li><a href="#">회사 소개</a> </li>
-					<li><a href="#">개인정보처리방침</a> </li>
-					<li><a href="#">여행약관</a> </li>
-					<li><a href="#">사이트맵</a> </li>
+					<li><a href="#">회사 소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">여행약관</a></li>
+					<li><a href="#">사이트맵</a></li>
 				</ul>
 				<h5>제주특별자치도 ***동 ***로 *** (대표전화) 123-456-7890</h5>
 				
 				<ul>
 					<li>
-					<a href="#"><span id="ic1"></span></a>
+						<a href="#"><span id="ic1"></span></a>
 					</li>
 					<li>
 						<a href="#"><span id="ic2"></span></a>
@@ -117,8 +166,8 @@
 						<a href="#"><span id="ic3"></span></a>
 					</li>
 				</ul>
-				
-				
+			
+			
 			</footer>
 		</div>
 	</body>
