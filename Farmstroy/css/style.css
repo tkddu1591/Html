@@ -1,0 +1,401 @@
+/*초기화*/
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input, textarea {
+    outline: none;
+}
+
+#container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-image: url("../images/images/head_top_line.png");
+    background-repeat: repeat-x;
+
+}
+
+header > div {
+    width: 980px;
+    height: 142px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -95px;
+}
+
+header > div > p {
+    float: right;
+    margin-top: 16px;
+}
+
+header > div > p > a {
+}
+
+header > div > img {
+    float: right;
+    clear: right;
+    margin-top: 24px;
+}
+
+header > div > .gnb {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+header > div > .gnb > li {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-image: url("../images/images/head_menu_line.png");
+    background-repeat: no-repeat;
+    background-position: 0 -7px;
+}
+
+header > div > .gnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: 0px 6px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header > div > .gnb > li:nth-of-type(1) > a {
+    background-image: url("../images/images/head_menu1.png");
+}
+
+header > div > .gnb > li:nth-of-type(2) > a {
+    background-image: url("../images/images/head_menu2.png");
+}
+
+header > div > .gnb > li:nth-of-type(3) > a {
+    background-image: url("../images/images/head_menu3.png");
+}
+
+header > div > .gnb > li:nth-of-type(4) > a {
+    background-image: url("../images/images/head_menu4.png");
+}
+
+header > div > .gnb > li:nth-of-type(5) > a {
+    background-image: url("../images/images/head_menu5.png");
+}
+
+header > div > .gnb > li:nth-of-type(1) > a:hover {
+    background-image: url("../images/images/head_menu1_ov.png");
+}
+
+header > div > .gnb > li:nth-of-type(2) > a:hover {
+    background-image: url("../images/images/head_menu2_ov.png");
+}
+
+header > div > .gnb > li:nth-of-type(3) > a:hover {
+    background-image: url("../images/images/head_menu3_ov.png");
+}
+
+header > div > .gnb > li:nth-of-type(4) > a:hover {
+    background-image: url("../images/images/head_menu4_ov.png");
+}
+
+header > div > .gnb > li:nth-of-type(5) > a:hover {
+    background-image: url("../images/images/head_menu5_ov.png");
+}
+
+header .badge {
+    position: absolute;
+    right: 50px;
+    top: -20px;
+}
+
+
+footer {
+    border-top: 1px solid #d1cab2;
+    width: 980px;
+    height: 120px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+footer > p {
+
+    float: right;
+    font-size: 11px;
+    margin-top: 26px;
+    margin-right: 16px;
+    color: #585858;
+    line-height: 20px;
+}
+
+footer > p > .copyright {
+    font-weight: bold;
+}
+
+/*인덱스*/
+#index {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#index > div {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+#index > .slider {
+    height: 312px;
+    position: relative
+}
+
+#index >.slider>.banner{
+    width: 230px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("../images/images/main_banner_bg.jpg");
+}
+#index>.slider>.banner>img:nth-of-type(1){margin-left: 10px;margin-top: 30px}
+#index>.slider>.banner>img:nth-of-type(2){margin-left: 10px; }
+#index>.slider>.banner>img:nth-of-type(3){
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
+
+#index > .slider > img {
+    position: absolute;
+    z-index: 100;
+    left: 30px;
+    top: 30px;
+}
+
+#index > .slider > .slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#index > .slider > .slides > li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#index > .slider > .slides > li:nth-of-type(1) {
+    left: 0
+}
+
+#index > .slider > .slides > li:nth-of-type(2) {
+    left: 100%
+}
+
+#index > .slider > .slides > li:nth-of-type(3) {
+    left: 200%
+}
+
+#index > .quick {
+    height: 72px
+}
+#index>.quick>a{
+    display: block;
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#index> .quick>a:nth-of-type(1){background-image: url("../images/images/main_banner_sub1_bg.jpg")}
+#index> .quick>a:nth-of-type(2){background-image: url("../images/images/main_banner_sub2_bg.jpg")}
+
+
+#index > .latest {
+    height: 186px;
+
+}
+#index>.latest>article{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+}
+#index >.latest>article>a{
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+#index >.latest>article>img{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+#index>.latest>article>table{
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+}
+#index>.latest>article>table>tr{
+}
+#index>.latest>article>table td{color:#6a6a6a}
+#index>.latest>article>table td>a{color:#6a6a6a}
+#index>.latest>article>table td:nth-of-type(2){
+    width: 142px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+}
+
+#index > .info {
+    height: 154px
+}
+
+/*서브페이지 공통*/
+#sub {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#sub > .bg {
+    width: 100%;
+    height: 184px;
+    background-image: url("../images/images/sub_top_bg.jpg");
+    position: relative;
+}
+
+#sub > .bg > img {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+
+#sub > section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#sub > section > aside {
+    float: left;
+    width: 180px;
+    height: 650px;
+    background-image: url("../images/images/sub_aside_bg_line.png");
+    background-repeat: no-repeat;
+    background-position: right 10px;
+    position: relative;
+}
+
+#sub > section > aside > img {
+    margin: 16px
+}
+
+#sub > section > aside > .lnb {
+    width: 175px;
+    height: 233px;
+    background-image: url("../images/images/sub_aside_bg_lnb.png");
+    position: absolute;
+    padding-top: 26px;
+    box-sizing: border-box;
+    left: 4px;
+    top: 70px;
+}
+
+#sub > section > aside > .lnb > li {
+    width: 100%;
+    height: 29px;
+    margin-bottom: 6px;
+}
+
+#sub > section > aside > .lnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+#sub > section > article {
+    float: left;
+    width: 800px;
+    min-height: 650px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+#sub>section>article>nav{
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid #c2c2c2;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    position: relative;
+}
+#sub>section>article>nav>img{
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+}
+#sub>section>article>nav>p{
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    color: #8b8b8b;
+}
+#sub>section>article>nav>p>strong{
+    font-weight: bold;
+    color: #91BA15;
+}
+
+/*팜스토리소개*/
+
+
+#sub > .introduction > aside > .lnb > li:nth-of-type(1) > a {background-image: url("../images/images/sub_cate1_lnb1.png")}
+#sub > .introduction > aside > .lnb > li:nth-of-type(2) > a {background-image: url("../images/images/sub_cate1_lnb2.png")}
+#sub > .introduction > aside > .lnb > li:nth-of-type(1) > a:hover {background-image: url("../images/images/sub_cate1_lnb1_ov.png")}
+#sub > .introduction > aside > .lnb > li:nth-of-type(2) > a:hover {background-image: url("../images/images/sub_cate1_lnb2_ov.png")}
+
+
+#sub >.introduction> aside>.lnb li:nth-of-type(1).on > a {background-image: url("../images/images/sub_cate1_lnb1_ov.png")}
+#sub >.introduction> aside>.lnb li:nth-of-type(2).on > a {background-image: url("../images/images/sub_cate1_lnb2_ov.png")}
+
+/*농작물 이야기*/
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(1)>a{background-image: url("../images/images/sub_cate3_lnb1.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(2)>a{background-image: url("../images/images/sub_cate3_lnb2.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(3)>a{background-image: url("../images/images/sub_cate3_lnb3.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(1)>a:hover{background-image: url("../images/images/sub_cate3_lnb1_ov.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(2)>a:hover{background-image: url("../images/images/sub_cate3_lnb2_ov.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(3)>a:hover{background-image: url("../images/images/sub_cate3_lnb3_ov.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(1).on>a{background-image: url("../images/images/sub_cate3_lnb1_ov.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(2).on>a{background-image: url("../images/images/sub_cate3_lnb2_ov.png")}
+#sub>.cropTalk>aside>.lnb>li:nth-of-type(3).on>a{background-image: url("../images/images/sub_cate3_lnb3_ov.png")}
