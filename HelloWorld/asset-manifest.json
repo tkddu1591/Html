@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Html/HelloWorld/static/css/main.929ed3f9.css",
+    "main.js": "/Html/HelloWorld/static/js/main.69c652e1.js",
+    "static/js/259.9222b58b.chunk.js": "/Html/HelloWorld/static/js/259.9222b58b.chunk.js",
+    "static/js/522.7941c3e6.chunk.js": "/Html/HelloWorld/static/js/522.7941c3e6.chunk.js",
+    "static/media/bg6.jpg": "/Html/HelloWorld/static/media/bg6.dc603b7416966b84ac68.jpg",
+    "static/media/bg1.jpg": "/Html/HelloWorld/static/media/bg1.71a28027225b8ae945bb.jpg",
+    "static/media/bg11.jpg": "/Html/HelloWorld/static/media/bg11.c6c21bd88aee67067eb6.jpg",
+    "static/media/bg3.jpg": "/Html/HelloWorld/static/media/bg3.850b808854f295b2c596.jpg",
+    "static/media/login.jpg": "/Html/HelloWorld/static/media/login.ab931d77bfe905914456.jpg",
+    "static/media/bg7.jpg": "/Html/HelloWorld/static/media/bg7.6249276d677cd6fd680e.jpg",
+    "static/media/bg5.jpg": "/Html/HelloWorld/static/media/bg5.d60a95eb31d6400f802f.jpg",
+    "static/media/community_icons.png": "/Html/HelloWorld/static/media/community_icons.0146e6587e02155d9266.png",
+    "static/media/bg8.jpg": "/Html/HelloWorld/static/media/bg8.2c89438b189a2a391f19.jpg",
+    "static/media/eva.jpg": "/Html/HelloWorld/static/media/eva.258d5c64c8708a5ce23b.jpg",
+    "static/media/banner1.jpg": "/Html/HelloWorld/static/media/banner1.24114620090d8691fd5c.jpg",
+    "static/media/ryan.jpg": "/Html/HelloWorld/static/media/ryan.ca24473bc1e6d20bf0d1.jpg",
+    "static/media/banner2.jpg": "/Html/HelloWorld/static/media/banner2.2cd464493da6af8b4fb8.jpg",
+    "static/media/avatar.jpg": "/Html/HelloWorld/static/media/avatar.21d108f80102dc685d9b.jpg",
+    "static/media/banner3.jpg": "/Html/HelloWorld/static/media/banner3.41bad0e064957fd2a445.jpg",
+    "static/media/nucleo-outline.eot": "/Html/HelloWorld/static/media/nucleo-outline.56814a6b7240045e1494.eot",
+    "static/media/nucleo-outline.ttf": "/Html/HelloWorld/static/media/nucleo-outline.1102ed9b2d16dccdec05.ttf",
+    "static/media/nucleo-outline.woff": "/Html/HelloWorld/static/media/nucleo-outline.1a1036e643f97457ec5f.woff",
+    "static/media/nucleo-outline.woff2": "/Html/HelloWorld/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
+    "index.html": "/Html/HelloWorld/index.html",
+    "static/media/bookmark-regular.svg": "/Html/HelloWorld/static/media/bookmark-regular.129bd43ba37408e58f7cdaf152e643f4.svg",
+    "static/media/bookmark-solid.svg": "/Html/HelloWorld/static/media/bookmark-solid.a90fddd4b6adc8c14e6d3ada02c3e593.svg"
+  },
+  "entrypoints": [
+    "static/css/main.929ed3f9.css",
+    "static/js/main.69c652e1.js"
+  ]
+}
